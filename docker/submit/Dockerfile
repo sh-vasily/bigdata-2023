@@ -1,4 +1,4 @@
-FROM bde2020/hadoop-base:2.0.0-hadoop3.2.1-java8
+FROM hadoop-base:1.1.6
 
 COPY WordCount.jar /opt/hadoop/applications/WordCount.jar
 

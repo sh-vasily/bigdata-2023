@@ -16,7 +16,7 @@ for line in sys.stdin:
     except ValueError:
         pass
 
-sorted_word2count = sorted(word2count.items(), key=itemgetter(0))
+sorted_word2count = sorted(word2count.items(), key=itemgetter(1), reverse=True)
 
 for word, count in sorted_word2count:
     print(f'{word}\t{count}')
