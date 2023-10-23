@@ -17,6 +17,5 @@ for line in sys.stdin:
 
 sorted_sector2max = sorted(sector2max.items(), key=itemgetter(1), reverse=True)
 
-for sector in sector2max:
-    sector_max_price = sector2max[sector]
+for sector, sector_max_price in sorted_sector2max:
     print(f'{sector}\t{sector_max_price}')
